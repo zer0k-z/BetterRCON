@@ -7,7 +7,7 @@ public Plugin myinfo =
 	name = "BetterRCON",
 	author = "zer0.k",
 	description = "RCON with full console output",
-	version = "1.0",
+	version = "1.1",
 	url = "github.com/zer0k-z/BetterRCON"
 };
 
@@ -54,7 +54,7 @@ Action Command_Rcon(int client, int args)
 						break;
 					}
 				}
-				ReplyToCommand(client, buffer);
+				PrintToConsole(client, buffer);
 			}
 		}
 	}
