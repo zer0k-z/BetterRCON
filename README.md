@@ -3,7 +3,7 @@
   <p>
     <strong>RCON with full console output.</strong>
   </p>
-
+</div>
 
 ## Requirements ##
 - Sourcemod and Metamod
