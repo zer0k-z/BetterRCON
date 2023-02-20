@@ -7,6 +7,7 @@
 
 ## Requirements ##
 - Sourcemod and Metamod
+- PTaH (Optional)
 
 
 ## Installation ##
