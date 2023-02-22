@@ -13,7 +13,7 @@ public Plugin myinfo =
 	name = "BetterRCON",
 	author = "zer0.k",
 	description = "RCON with full console output",
-	version = "1.2",
+	version = "1.3.0",
 	url = "github.com/zer0k-z/BetterRCON"
 };
 
@@ -131,8 +131,13 @@ stock bool String_EndsWith(const char[] str, const char[] subString)
 	int n_str = strlen(str) - 1;
 	int n_subString = strlen(subString) - 1;
 
-	if(n_str < n_subString) {
+	if (n_str < n_subString || strlen(str) == 0) 
+	{
 		return false;
+	}
+	else if (strlen(subString) == 0)
+	{
+		return true;
 	}
 
 	while (n_str != 0 && n_subString != 0) {
